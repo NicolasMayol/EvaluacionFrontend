@@ -1,27 +1,38 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 .tableContainer{
     align-self: center;
     border: 2px solid black;
     border-collapse:collapse;
+    height: 80vh;
 }
 td, th{
     border:1px solid black;
     border-collapse:collapse;
-    padding: 4px;
-    font-size: .8rem;
+    padding: 1px;
+    margin-left: 1px;
+    font-size: .48rem;
 }
 table tbody tr:nth-child(odd){
     background-color: rgb(197, 195, 195);
 }
 @media (min-width: 768px) {
     td, th{
-        font-size: 1.1rem;
-        padding-right: 2rem;
+        font-size: 1rem;
+        padding-right: .5rem;
     }
 }
 @media (min-width: 1000px) {
+    th{
+        padding: .5rem;
+    }
     td, th{
-        font-size: 1.5rem;
-        padding-right: 2.3rem;
+        font-size: 1.2rem;
+        padding: .3rem;
+        padding-right: .8rem;
     }
 }
 
