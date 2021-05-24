@@ -1,7 +1,7 @@
 export default function Home (){
     return (
-        <>
-        HOLA MUNDO
-        </>
+        <div style={{justifyContent:'center',alignContent:'center',textAlign:'center'}}>
+            <h1>HOLA MUNDO!</h1>
+        </div>
     )
 }

@@ -1,4 +1,4 @@
-@import '../../src/atoms/Table/styles/table.css';
+@import '../../src/atoms/Table/table.css';
 .container{
     height: 100vh;
     display: flex;

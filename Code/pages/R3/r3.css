@@ -1,0 +1,32 @@
+@import '../../src/atoms/Video/video.css';
+.container-r3{
+    display: flex;
+    flex-flow: column wrap;
+}
+.descript{
+    padding: .5rem;
+    height: 50vh;
+}
+h1{
+    font-weight: bold;
+    font-size: 7vh;
+}
+p{
+    font-size: 4vh;
+}
+@media (min-width: 768px){
+    .descript{
+        padding: 1rem;
+        height: 40vh;
+    }
+}
+@media (min-width: 1000px) {
+    .container-r3{
+        flex-flow: row nowrap;
+    }
+    .descript{
+        height: 100vh;
+        align-items: center;
+        margin: 1rem;
+    }
+}
