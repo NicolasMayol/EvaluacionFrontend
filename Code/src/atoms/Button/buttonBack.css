@@ -1,0 +1,17 @@
+.buttonBack{
+    height: 2rem;
+    width: 5rem;
+    margin: 3rem;
+    transition: all 0, 25s;
+    box-shadow: 0 4px 6px rgba(8, 8, 0, 0.253);
+    transition: transform 0.6s;
+}
+.buttonBack:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 7px rgba(13, 0, 0, 0.466);
+}
+@media (max-width: 660px) {
+    .buttonBack{
+        margin: 1.5rem;
+    }
+}

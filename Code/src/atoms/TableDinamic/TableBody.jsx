@@ -3,6 +3,8 @@ import { Users } from './../../../api/api'
 
 export default function TableBody(){
 
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
     const [user, setUser] = useState([]);
 
     useEffect(()=>{
@@ -13,11 +15,21 @@ export default function TableBody(){
       await Users.get(`/users`)
         .then(res => {
             setUser(res.data);
+            setLoading(false);
           })
+          .catch((err) => {
+            setError(err);
+            setLoading(false);
+          });
     }
     return(
+      <>
         <tbody>
-            {
+            {loading ? (
+                <div>loading....</div>
+              ) : error ? (
+                <div>error...</div>
+              ) : (
                 user.map((data)=>(
       			    <tr key={data.id}>
       			    	<td>{data.name}</td>
@@ -27,8 +39,10 @@ export default function TableBody(){
       			    	<td>{data.address.city}</td>
       			    	<td>{data.address.street}</td>
       			    </tr>
-                ))
+                    ))
+                )
             }
         </tbody>
+        </>
     )
 }

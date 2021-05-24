@@ -1,5 +1,6 @@
 export default function TableHead(){
     return(
+		<>
         <thead>
       			<tr>
       				<th>Nombre</th>
@@ -10,5 +11,6 @@ export default function TableHead(){
       				<th>Calle</th>
       			</tr>
       	</thead>
+		</>
     )
 }

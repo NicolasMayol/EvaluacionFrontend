@@ -1,6 +1,8 @@
 @import '../pages/R2/r2.css';
 @import '../pages/R3/r3.css';
 @import '../pages/R4/r4.css';
+@import '../src/atoms/Button/buttonBack.css';
+@import '../src/components/Links/links.css';
 
 html,
 body {

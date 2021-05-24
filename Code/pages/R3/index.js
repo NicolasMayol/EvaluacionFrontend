@@ -1,7 +1,10 @@
 import Video from './../../src/atoms/Video/Video';
+import ButtonBack from './../../src/atoms/Button/ButtonBack';
+
 export default function R3(){
     return(
         <div className='container-r3'>
+        <ButtonBack/>
         <Video/>
         <div className='descript'>
             <h1>Ronnie Coleman Yeah Buddy</h1>
