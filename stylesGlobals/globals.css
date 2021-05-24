@@ -1,3 +1,7 @@
+@import '../pages/R2/r2.css';
+@import '../pages/R3/r3.css';
+@import '../pages/R4/r4.css';
+
 html,
 body {
   padding: 0;

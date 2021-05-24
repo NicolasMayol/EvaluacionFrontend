@@ -1,0 +1,6 @@
+@import '../../src/atoms/Table/styles/table.css';
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
